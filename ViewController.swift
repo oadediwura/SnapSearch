@@ -17,6 +17,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     var myImage: UIImage?
     var switchButton = UIButton();
     var flashButton = UIButton()
+    // camera
     var camera : LLSimpleCamera!
     
     @IBOutlet weak var scrollContainerView: UIView!
