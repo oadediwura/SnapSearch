@@ -3,7 +3,7 @@
 //  SnapSearch
 //
 //  Created by Mac on 7/26/16.
-//  Copyright © 2016 papatee. All rights reserved.
+//  Copyright © 2016 Taiwo Adelabu, K.Swain & D.Nwankwo. All rights reserved.
 //
 
 import UIKit
@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        NSThread.sleepForTimeInterval(3)
         return true
     }
 

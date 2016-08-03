@@ -16,12 +16,41 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="i41-lx-q84">
+                                <rect key="frame" x="180" y="184" width="240" height="231"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="©2016 Taiwo Adelabu, K.Swain &amp; D. Nwankwo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5A7-eG-CIv">
+                                <rect key="frame" x="117" y="559" width="410" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.8338296248" green="0.82280650369999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Snap Search" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5F-yv-DBv">
+                                <rect key="frame" x="172" y="107" width="257" height="60"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="50"/>
+                                <color key="textColor" red="0.8338296248" green="0.82280650369999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25317043602410266" green="0.10662257086211664" blue="0.45596776832460728" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="I5F-yv-DBv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4iY-uP-xiV"/>
+                            <constraint firstItem="5A7-eG-CIv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="bWi-3u-ixE"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="5A7-eG-CIv" secondAttribute="bottom" constant="20" id="kVe-pb-SwH"/>
+                            <constraint firstItem="i41-lx-q84" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="l3r-nZ-Bt6"/>
+                            <constraint firstItem="i41-lx-q84" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="pmV-pb-T56"/>
+                            <constraint firstItem="i41-lx-q84" firstAttribute="top" secondItem="I5F-yv-DBv" secondAttribute="bottom" constant="8" id="xK6-xH-wQe"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="169" y="323"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Launch" width="251" height="250"/>
+    </resources>
 </document>

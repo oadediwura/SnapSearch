@@ -3,7 +3,7 @@
 //  SnapSearch
 //
 //  Created by Mac on 7/26/16.
-//  Copyright © 2016 papatee. All rights reserved.
+//  Copyright © 2016 Taiwo Adelabu, K.Swain & D.Nwankwo. All rights reserved.
 //
 
 import Foundation
