@@ -342,4 +342,3 @@ extension ViewController: SFSafariViewControllerDelegate {
     }
 }
 
-
