@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -17,31 +17,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="i41-lx-q84">
-                                <rect key="frame" x="180" y="184" width="240" height="231"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="©2016 Taiwo Adelabu, K.Swain &amp; D. Nwankwo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5A7-eG-CIv">
-                                <rect key="frame" x="117" y="559" width="410" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="©2016 Taiwo Adelabu, K.Swain &amp; D. Nwankwo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5A7-eG-CIv">
+                                <rect key="frame" x="124" y="559" width="353" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.8338296248" green="0.82280650369999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Snap Search" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5F-yv-DBv">
-                                <rect key="frame" x="172" y="107" width="257" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snap Search" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5F-yv-DBv">
+                                <rect key="frame" x="173" y="106" width="254" height="64"/>
                                 <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="50"/>
                                 <color key="textColor" red="0.8338296248" green="0.82280650369999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="New launch image" translatesAutoresizingMaskIntoConstraints="NO" id="5QG-gy-uIw">
+                                <rect key="frame" x="190" y="190" width="220" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="14e-lc-KYx"/>
+                                    <constraint firstAttribute="width" constant="220" id="icE-d8-3sG"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.25317043602410266" green="0.10662257086211664" blue="0.45596776832460728" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.30787600175242291" green="0.08741648203324387" blue="0.45596776832460728" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="I5F-yv-DBv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4iY-uP-xiV"/>
+                            <constraint firstItem="5QG-gy-uIw" firstAttribute="top" secondItem="I5F-yv-DBv" secondAttribute="bottom" constant="20" id="Pux-Nl-JUV"/>
+                            <constraint firstItem="5QG-gy-uIw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="U18-yW-W64"/>
+                            <constraint firstItem="5QG-gy-uIw" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Vn1-lv-W6O"/>
                             <constraint firstItem="5A7-eG-CIv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="bWi-3u-ixE"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="5A7-eG-CIv" secondAttribute="bottom" constant="20" id="kVe-pb-SwH"/>
-                            <constraint firstItem="i41-lx-q84" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="l3r-nZ-Bt6"/>
-                            <constraint firstItem="i41-lx-q84" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="pmV-pb-T56"/>
-                            <constraint firstItem="i41-lx-q84" firstAttribute="top" secondItem="I5F-yv-DBv" secondAttribute="bottom" constant="8" id="xK6-xH-wQe"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -51,6 +55,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Launch" width="251" height="250"/>
+        <image name="New launch image" width="1316" height="1189"/>
     </resources>
 </document>
