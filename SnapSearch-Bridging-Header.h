@@ -13,3 +13,6 @@
 #import <LLSimpleCamera/LLSimpleCamera-umbrella.h>
 
 #endif /* SnapSearch_Bridging_Header_h */
+
+#import <Google/Analytics.h>
+

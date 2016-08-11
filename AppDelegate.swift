@@ -1,14 +1,12 @@
-//
 //  AppDelegate.swift
 //  SnapSearch
-//
 //  Created by Mac on 7/26/16.
 //  Copyright © 2016 Taiwo Adelabu, K.Swain & D.Nwankwo. All rights reserved.
-//
 
 import UIKit
 import Fabric
 import Crashlytics
+
 
 
 @UIApplicationMain
@@ -19,8 +17,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        NSThread.sleepForTimeInterval(2)
+        NSThread.sleepForTimeInterval(1)
         Fabric.with([Crashlytics.self])
+        
+        // Configure tracker from GoogleService-Info.plist.
+        var configureError:NSError?
+        GGLContext.sharedInstance().configureWithError(&configureError)
+        assert(configureError == nil, "Error configuring Google services: \(configureError)")
+        
+        // Optional: configure GAI options.
+        let gai = GAI.sharedInstance()
+        gai.trackUncaughtExceptions = true  // report uncaught exceptions
+        gai.logger.logLevel = GAILogLevel.Verbose  // remove before app release
+
+        
         return true
     }
 

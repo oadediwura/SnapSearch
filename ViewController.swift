@@ -109,6 +109,12 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         if !isSafari {
             self.camera.start()
         }
+        
+        let tracker = GAI.sharedInstance().defaultTracker
+        tracker.set(kGAIScreenName, value: "Main Screen")
+        
+        let builder = GAIDictionaryBuilder.createScreenView()
+        tracker.send(builder.build() as [NSObject : AnyObject])
     }
     
     @IBOutlet weak var scrollableHeightConstraint: NSLayoutConstraint!
@@ -183,10 +189,10 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     func cloudServiceCall() {
         
         
-         CloudSightConnection.sharedInstance().consumerKey = "n2o53offxe1q5WJC4Dzm0Q"
-         CloudSightConnection.sharedInstance().consumerSecret = "g_eBushHVJmxtuKPBPSCaw"
-       // CloudSightConnection.sharedInstance().consumerKey = "DkWlFtnLP7wFkytv0w-Ubg"
-       // CloudSightConnection.sharedInstance().consumerSecret = "Hk1QtCNn0rt05OqUCnOEJQ"
+       //  CloudSightConnection.sharedInstance().consumerKey = "n2o53offxe1q5WJC4Dzm0Q"
+       //  CloudSightConnection.sharedInstance().consumerSecret = "g_eBushHVJmxtuKPBPSCaw"
+        CloudSightConnection.sharedInstance().consumerKey = "DkWlFtnLP7wFkytv0w-Ubg"
+        CloudSightConnection.sharedInstance().consumerSecret = "Hk1QtCNn0rt05OqUCnOEJQ"
         
         self.searchWithImage(self.myImage!)
     }
